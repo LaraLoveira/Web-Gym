@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icono/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icono/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icono/favicon-16x16.png">
+    <link rel="manifest" href="icono/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                <img src="recursos/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;"> Disciplina Muscular</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <!-- Dropdown de Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="equipamientoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu" aria-labelledby="equipamientoDropdown">
+                                <li><a class="dropdown-item" href="suplementos.html">Suplementos</a></li>
+                                <li><a class="dropdown-item" href="equipamiento.html">Equipamineto</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="micesta.html" class="btn btn-outline-light">Mi Cesta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4"><b>Equipamiento</b></h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Producto 1 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/kettlebell.jpg" class="card-img-top" alt="kettlebell">
+                            <div class="card-body">
+                                <h5 class="card-title">Kettlebell</h5>
+                                <p class="card-text">35€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Kettlebell" data-price="35€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/bancopesas.jpg" class="card-img-top" alt="Banco de Pesas">
+                            <div class="card-body">
+                                <h5 class="card-title">Banco de Pesas</h5>
+                                <p class="card-text">175.95€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Banco de Pesas" data-price="175.95€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/banco.jpg" class="card-img-top" alt="Banco">
+                            <div class="card-body">
+                                <h5 class="card-title">Banco</h5>
+                                <p class="card-text">129.99€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Creatina" data-price="39.99€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                    <!-- Producto 4 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/mancuernas5kg.jpg" class="card-img-top" alt="Mancuernas">
+                            <div class="card-body">
+                                <h5 class="card-title">Mancuernas (5Kg)</h5>
+                                <p class="card-text">45€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Mancuernas" data-price="45€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/mancuernas6kg.jpg" class="card-img-top" alt="Mancuernas">
+                            <div class="card-body">
+                                <h5 class="card-title">Mancuernas (6Kg)</h5>
+                                <p class="card-text">50€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Mancuernas" data-price="50€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="recursos/mancuernas7kg.jpg" class="card-img-top" alt="Mancuernas">
+                            <div class="card-body">
+                                <h5 class="card-title">Mancuernas (7Kg)</h5>
+                                <p class="card-text">58€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Mancuernas" data-price="58€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white bg-black text-center py-3">
+        <p>&copy;2025 Disciplina Muscular. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

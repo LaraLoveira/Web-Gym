@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplina Muscular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icono/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icono/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icono/favicon-16x16.png">
+    <link rel="manifest" href="icono/site.webmanifest">
+</head>
+
+<body> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                
+                <a class="navbar-brand" href="index.html">
+                <img src="recursos/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;"> Disciplina Muscular</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <!-- Dropdown de los Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="equipamientoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu" aria-labelledby="equipamientoDropdown">
+                                <li><a class="dropdown-item" href="suplementos.html">Suplementos</a></li>
+                                <li><a class="dropdown-item" href="equipamiento.html">Equipamineto</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="micesta.html" class="btn btn-outline-light">Mi Cesta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" class="welcome text-center py-4">
+            <div class="container">
+                <h2><b>¡Bienvenido/a a Disciplina Muscular!</b></h2>
+                <p class="lead">
+                    En Disciplina Muscular, estamos comprometidos con tu éxito a nivel deportivo. Explora nuestra amplia gama de 
+                    productos diseñados para ayudarte a alcanzar tus metas: desde suplementos nutricionales hasta equipamiento de alta calidad.
+                    También tenemos a disposición todas las tarifas que ofrecemos en nuestro gimnasio.
+                    <br/>Ante cualquier duda, ¡No dudes en ponerte en contacto con nosotros!
+                </p>
+
+                <img src="recursos/40e6c5f5681473f4914d7a5b98245cdd.jpg" alt="Gym" class="img-fluid my-4 rounded">
+
+                <div class="button-container d-flex justify-content-center gap-3">
+                    <a href="suplementos.html" class="btn btn-danger">Suplementos</a>
+                    <a href="equipamiento.html" class="btn btn-danger">Equipamiento</a>
+                    <a href="tarifas.html" class="btn btn-danger">Tarifas</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-carousel" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4"><b>Te podría interesar</b></h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <img src="recursos/mancuernas5kg.jpg" class="d-block w-25 rounded" alt="Mancuernas">
+                            </div>
+                            <div class="text-center mt-3">
+                                <h5>Mancuernas 5Kg</h5>
+                                <p>45€</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="recursos/kettlebell.jpg" class="d-block w-25 rounded" alt="Cinta de Correr">
+                            </div>
+                            <div class="text-center mt-3">
+                                <h5>Kettlebell</h5>
+                                <p>35€</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <img src="recursos/bancopesas.jpg" class="d-block w-25 rounded" alt="Banco de Press">
+                            </div>
+                            <div class="text-center mt-3">
+                                <h5>Banco de Pesas</h5>
+                                <p>199.99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white bg-black text-center py-3">
+        <p>&copy;2025 Disciplina Muscular. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

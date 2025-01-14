@@ -1,0 +1,185 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #cf0000 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000 !important;
+}
+
+
+/* Sección principal */
+.container {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #cf0000;
+}
+
+
+/* Botón general */
+button, .btn {
+    font-weight: bold;
+    transition: background-color 0.4s, transform 0.3s;
+    background-color: #cf0000;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* Productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background-color: #151515;
+    padding: 15px;
+    border: 1px solid #f00;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    border-bottom: 2px solid #f00;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #c00;
+}
+
+
+/* Cesta */
+.cart-section {
+    margin: 30px auto;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 15px;
+}
+
+.cart-summary {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #c00;
+}
+
+
+/* Contacto */
+.contact {
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px;
+    background-color: #e9e9e9;
+    color: #000;
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cf0000;
+    border-radius: 5px;
+}
+
+.contact-form .submit-button {
+    background-color: #cf0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #c00;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 2%;
+    text-align: center;
+    padding: 10px;
+}

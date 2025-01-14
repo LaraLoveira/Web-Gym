@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icono/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icono/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icono/favicon-16x16.png">
+    <link rel="manifest" href="icono/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                <img src="recursos/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;"> Disciplina Muscular</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <!-- Dropdown de Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="equipamientoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu" aria-labelledby="equipamientoDropdown">
+                                <li><a class="dropdown-item" href="suplementos.html">Suplementos</a></li>
+                                <li><a class="dropdown-item" href="equipamiento.html">Equipamineto</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="micesta.html" class="btn btn-outline-light">Mi Cesta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4"><b>Tarifas Gimnasio</b></h2>
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Tarifa 1 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pack mensual familiar (3 o más)</b></h5>
+                                <p class="card-text">30€ por persona</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Familiar mensual" data-price="30€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarifa 2 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pack mensual (2 personas)</b></h5>
+                                <p class="card-text">32.50€ por persona</p>
+                                <button class="btn btn-danger add-to-cart" data-name="2 Personas mensual" data-price="32.50€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarifa 3 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pack mensual (1 persona)</b></h5>
+                                <p class="card-text">35€</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Individual mensual" data-price="35€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                    <!-- Tarifa 4 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pack quincena</b></h5>
+                                <p class="card-text">20€ por persona</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Quincena" data-price="20€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarifa 5 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Un día</b></h5>
+                                <p class="card-text">5€ por persona</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Tarifa indv." data-price="5€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarifa 6 -->
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Medio día (mañana o tarde)</b></h5>
+                                <p class="card-text">2.50€ por persona</p>
+                                <button class="btn btn-danger add-to-cart" data-name="Tarifa indv. medio día" data-price="2.50€">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container text-center">
+                    <img src="recursos/40e6c5f5681473f4914d7a5b98245cdd.jpg" alt="Gym" class="img-fluid my-4 rounded">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white bg-black text-center py-3">
+        <p>&copy;2025 Disciplina Muscular. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
